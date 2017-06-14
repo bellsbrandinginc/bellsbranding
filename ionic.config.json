@@ -1,0 +1,14 @@
+{
+  "name": "Bells Branding Inc",
+  "app_id": "6564c329",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "scss/**/*"
+  ],
+  "type": "ionic1"
+}
