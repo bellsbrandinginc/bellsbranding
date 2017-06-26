@@ -118,7 +118,7 @@ angular.module('starter.controllers-account', [])
       disableAnimate: true,
       disableBack: true
     });
-    $state.go('discover');
+    $state.go('app.browse');
   };
 
   // Open the login modal
@@ -197,7 +197,7 @@ angular.module('starter.controllers-account', [])
     // handle logged in
     $scope.AuthData = AuthData;
     handleLoggedIn();
-	$state.go('discover');
+	$state.go('app.browse');
   };
 
 
@@ -238,7 +238,7 @@ angular.module('starter.controllers-account', [])
 
                 $scope.loginData = $scope.signUpData;
                 $scope.doLogin();
-				$state.go('discover');
+				$state.go('app.browse');
 
             }, function(error){
                 Codes.handleError(error)
@@ -754,7 +754,7 @@ angular.module('starter.controllers-account', [])
   // ---------------------------------------------------------------------------
   // Intro
   $scope.skipIntro = function() {
-    $state.go('discover');
+    $state.go('app.browse');
   };
 
   $scope.goTo = function(nextState) {
